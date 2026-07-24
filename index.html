@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    
+</head>
+
+<body>
+
+<h1>Objetos principales de JavaScript</h1>
+
+<section>
+
+<h2>1. Objeto History</h2>
+
+<p>
+El objeto <b>History</b> permite navegar por el historial del navegador, pero no deja ver las páginas visitadas.
+</p>
+
+<h3>Propiedad</h3>
+
+<ul>
+    <li><code>length</code>: cantidad de páginas visitadas.</li>
+</ul>
+
+<h3>Métodos</h3>
+
+<table>
+
+<tr>
+    <th>Método</th>
+    <th>Descripción</th>
+</tr>
+
+<tr>
+    <td>back()</td>
+    <td>Regresa a la página anterior.</td>
+</tr>
+
+<tr>
+    <td>forward()</td>
+    <td>Va a la siguiente página.</td>
+</tr>
+
+<tr>
+    <td>go()</td>
+    <td>Se mueve a otra página del historial.</td>
+</tr>
+
+</table>
+
+<h3>Ejemplo</h3>
+
+<pre>
+&lt;script&gt;
+function atras(){
+    window.history.back();
+}
+&lt;/script&gt;
+
+&lt;button onclick="atras()"&gt;Atrás&lt;/button&gt;
+</pre>
+
+</section>
+
+<section>
+
+<h2>2. Objeto Document</h2>
+
+<p>
+El objeto <b>Document</b> representa toda la página web y permite acceder a sus elementos.
+</p>
+
+<h3>Propiedades</h3>
+
+<ul>
+    <li>document.body</li>
+    <li>document.title</li>
+    <li>document.images</li>
+</ul>
+
+<h3>Métodos</h3>
+
+<ul>
+    <li>getElementById()</li>
+    <li>getElementsByTagName()</li>
+    <li>getElementsByName()</li>
+</ul>
+
+<h3>Modificar contenido</h3>
+
+<ul>
+    <li>innerHTML</li>
+    <li>setAttribute()</li>
+    <li>style</li>
+</ul>
+
+<h3>Ejemplo</h3>
+
+<pre>
+&lt;button onclick="cambiar()"&gt;Cambiar&lt;/button&gt;
+
+&lt;p id="texto"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function cambiar(){
+    document.getElementById("texto").innerHTML="Hola Mundo";
+}
+&lt;/script&gt;
+</pre>
+
+</section>
+
+<section>
+
+<h2>3. Objeto Form</h2>
+
+<p>
+El objeto <b>Form</b> sirve para trabajar con formularios y obtener datos del usuario.
+</p>
+
+<ul>
+    <li>text</li>
+    <li>textarea</li>
+    <li>radio</li>
+    <li>checkbox</li>
+    <li>select</li>
+</ul>
+
+</section>
+
+</body>
+</html>
